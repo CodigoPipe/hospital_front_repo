@@ -1,4 +1,4 @@
-import { specialityI,patientI } from "./interfaces"
+import { specialityI,patientI } from "./interfaces.js"
 
 
 

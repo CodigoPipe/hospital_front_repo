@@ -4,7 +4,8 @@ export interface specialityI{
 
     name: string,
     physician: string,
-    specialityId: number|null
+    specialityId: number|null,
+    patients: patientI[]|null
 
 }
 
@@ -14,6 +15,7 @@ export interface patientI{
     name: string,
     age: number,
     dni: number,
+    numberOfAppointments: null|number,
     speciality: {
         specialityId: number
     }
