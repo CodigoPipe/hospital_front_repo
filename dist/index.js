@@ -1,2 +1,2 @@
 "use strict";
-let id = 5;
+const divCreatedSpecialities = document.querySelector("#created-specialities-son");
