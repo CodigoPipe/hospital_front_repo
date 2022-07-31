@@ -1,7 +1,7 @@
-import { getAllSpecialities} from "./actions.js";
-import {specialityI} from "./interfaces.js"
+import { getAllSpecialities, getAllPatients} from "./actions.js";
+import {specialityI, patientI} from "./interfaces.js"
 
-
+//get and create all specialities
 export function getAndCreateSpecialities(){
     getAllSpecialities().then(specialities =>{
         createAllSpecialities(specialities)
@@ -40,3 +40,54 @@ function createSpeciality(speciality: specialityI){
 
 }
 
+//get and create all patient
+export function getAndCreatePatients(){
+    getAllPatients().then(patients =>{
+        createAllPatients(patients)
+    })
+}
+
+
+function createAllPatients(patients: patientI[]){
+
+      patients.forEach(patient =>{
+      createPatient(patient)
+  })
+}
+
+function createPatient(patient: patientI){
+   
+    const createdPatientsDiv = document.querySelector('#created-patients-son') as HTMLDivElement
+
+    const newDiv:HTMLDivElement = document.createElement('div');
+    newDiv.className = 'forms'
+
+    const h2PatientId: HTMLHeadElement = document.createElement('h2');
+    h2PatientId.className = "h2-titles"
+    h2PatientId.innerText = `Patient Id: ${patient.patientId}`
+    
+    const h2PatientName: HTMLHeadElement = document.createElement('h2');
+    h2PatientName.className = "h2-titles"
+    h2PatientName.innerText = `Patient Name: ${patient.name}`
+
+    const h2PatientAge: HTMLHeadElement = document.createElement('h2');
+    h2PatientAge.className = "h2-titles"
+    h2PatientAge.innerText = `Patient Age: ${patient.age}`
+
+    const h2PatientDni: HTMLHeadElement = document.createElement('h2');
+    h2PatientDni.className = "h2-titles"
+    h2PatientDni.innerText = `Patient DNI: ${patient.dni}`
+
+    const h2PatientAppointments: HTMLHeadElement = document.createElement('h2');
+    h2PatientAppointments.className = "h2-titles"
+    h2PatientAppointments.innerText = `Patient Appointment: ${patient.numberOfAppointments}`
+
+    // const h2PatientSpeciality: HTMLHeadElement = document.createElement('h2');
+    // h2PatientSpeciality.className = "h2-titles"
+    // h2PatientSpeciality.innerText = `Patient speciality ID: ${patient.speciality.specialityId}`
+
+
+    newDiv.append(h2PatientId, h2PatientName , h2PatientAge, h2PatientDni, h2PatientAppointments );
+    createdPatientsDiv.append(newDiv);
+
+}

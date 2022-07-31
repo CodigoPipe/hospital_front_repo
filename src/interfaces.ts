@@ -16,8 +16,8 @@ export interface patientI{
     age: number,
     dni: number,
     numberOfAppointments: null|number,
-    speciality: {
-        specialityId: number
-    }
+    // speciality: {
+    //     specialityId: number
+    // }
 
 }
