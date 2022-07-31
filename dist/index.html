@@ -93,11 +93,11 @@
 
                 <h2 class="forms-title">Delete speciality</h2>
 
-                <input placeholder="SpecialityId" class="all-inputs" id="specialityId-input" type="text"  required /> <br>
-                <input placeholder="Speciality name" class="all-inputs" id="title-input" type="text"  required/> <br>
-                <input placeholder="Physician in charge" class="all-inputs" id="special-input" type="text"  required /> <br>
+                <input placeholder="SpecialityId" class="all-inputs" id="specialityId-input-delete" type="text"  required /> <br>
+                <input placeholder="Speciality name" class="all-inputs" id="specialityname-input-delete" type="text"  required/> <br>
+                <input placeholder="Physician in charge" class="all-inputs" id="physician-input-delete" type="text"  required /> <br>
                 
-                <button class="buttons" id="delete-speciality-button">Update Speciality</button>
+                <button class="buttons" id="delete-speciality-button">Delete Speciality</button>
 
               </form>
 
@@ -109,14 +109,14 @@
 
                 <h2 class="forms-title">Delete patient</h2>
 
-                <input placeholder="PatientId" class="all-inputs" id="patient-input-patientId" type="text"  required/> <br>
-                <input placeholder="Name" class="all-inputs" id="patient-input-name" type="text"  required/> <br>
-                <input placeholder="Age" class="all-inputs" id="age-input" type="text"  required/> <br>
-                <input placeholder="Dni" class="all-inputs" id="dni-input" type="text" required /> <br>
-                <input placeholder="dd/mm/aaaa" class="all-inputs" id="appointment-input" type="text" required /> <br>
-                <input placeholder="Speciality ID" class="all-inputs" id="patient-speciality-id" type="text" required /> <br> 
+                <input placeholder="PatientId" class="all-inputs" id="patientId-input-delete" type="text"  required/> <br>
+                <input placeholder="Name" class="all-inputs" id="patient-name-input-delete" type="text"  required/> <br>
+                <input placeholder="Age" class="all-inputs" id="age-input-delete" type="text"  required/> <br>
+                <input placeholder="Dni" class="all-inputs" id="dni-input-delete" type="text" required /> <br>
+                <input placeholder="dd/mm/aaaa" class="all-inputs" id="appointment-input-delete" type="text" required /> <br>
+                <input placeholder="Speciality ID" class="all-inputs" id="patient-speciality-id-input-delete" type="text" required /> <br> 
                 
-                <button class="buttons" id="delete-patient-button">Update Patient</button>
+                <button class="buttons" id="delete-patient-button">Delete Patient</button>
               </form>
 
         </div>
@@ -125,6 +125,29 @@
         
         
     </div>
+
+    <br>
+    <!-- created elements -->
+
+    <div id="created-specialities-father">
+        <div id="created-specialities-son">
+            <h2>Specialities</h2>
+    
+    
+        </div>
+    </div>
+    
+
+    <div id="created-patients-father">
+
+        <div id="created-patients-son">
+
+            <h2>Patients</h2>
+
+        </div>
+
+    </div>
+    
 
     <script type="module" src="index.js"></script>
 </body>
