@@ -91,3 +91,9 @@ function createPatient(patient: patientI){
     createdPatientsDiv.append(newDiv);
 
 }
+
+
+//put ...create speciality
+
+
+
