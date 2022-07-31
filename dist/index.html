@@ -19,16 +19,17 @@
 
     <div id="forms-container">
 
+    
         <div class="forms">
 
-            <form class="speciality-form " action="#">
+            <form id="speciality-form " action="#">
 
-                <h2 class="title">Create new speciality</h2>
+                <h2 class="forms-title">Create new speciality</h2>
 
                 <input placeholder="Speciality name" class="all-inputs" id="title-input" type="text"  required/> <br>
                 <input placeholder="Physician in charge" class="all-inputs" id="special-input" type="text"  required /> <br>
                 
-                <button class="create-speciality-button">Create Speciality</button>
+                <button class="buttons" id="create-speciality-button">Create Speciality</button>
 
               </form>
 
@@ -36,23 +37,93 @@
 
         <div class="forms">
 
-            <form class="patient-form " action="#">
+            <form id="patient-form " action="#">
 
-                <h2 class="title">Create a new patient</h2>
+                <h2 class="forms-title">Create a new patient</h2>
 
                 <input placeholder="Name" class="all-inputs" id="patient-input-name" type="text"  required/> <br>
                 <input placeholder="Age" class="all-inputs" id="age-input" type="text"  required/> <br>
                 <input placeholder="Dni" class="all-inputs" id="dni-input" type="text" required /> <br>
                 <input placeholder="dd/mm/aaaa" class="all-inputs" id="appointment-input" type="text" required /> <br>
-                <input placeholder="Specialiti ID" class="all-inputs" id="patient-speciality-id" type="text" required /> <br> 
+                <input placeholder="Speciality ID" class="all-inputs" id="patient-speciality-id" type="text" required /> <br> 
                 
-                <button id="create-patient-button">Create Patient</button>
+                <button class="buttons" id="create-patient-button">Create Patient</button>
               </form>
 
         </div>
-        
-        
 
+        <div class="forms">
+
+            <form id="speciality-form " action="#">
+
+                <h2 class="forms-title">Update speciality</h2>
+
+                <input placeholder="SpecialityId" class="all-inputs" id="specialityId-input" type="text"  required /> <br>
+                <input placeholder="Speciality name" class="all-inputs" id="title-input" type="text"  required/> <br>
+                <input placeholder="Physician in charge" class="all-inputs" id="special-input" type="text"  required /> <br>
+                
+                <button class="buttons" id="update-speciality-button">Update Speciality</button>
+
+              </form>
+
+        </div>
+
+        <div class="forms">
+
+            <form id="patient-form " action="#">
+
+                <h2 class="forms-title">Update patient</h2>
+
+                <input placeholder="PatientId" class="all-inputs" id="patient-input-patientId" type="text"  required/> <br>
+                <input placeholder="Name" class="all-inputs" id="patient-input-name" type="text"  required/> <br>
+                <input placeholder="Age" class="all-inputs" id="age-input" type="text"  required/> <br>
+                <input placeholder="Dni" class="all-inputs" id="dni-input" type="text" required /> <br>
+                <input placeholder="dd/mm/aaaa" class="all-inputs" id="appointment-input" type="text" required /> <br>
+                <input placeholder="Speciality ID" class="all-inputs" id="patient-speciality-id" type="text" required /> <br> 
+                
+                <button class="buttons" id="update-patient-button">Update Patient</button>
+              </form>
+
+        </div>
+
+
+        <div class="forms">
+
+            <form id="speciality-form " action="#">
+
+                <h2 class="forms-title">Delete speciality</h2>
+
+                <input placeholder="SpecialityId" class="all-inputs" id="specialityId-input" type="text"  required /> <br>
+                <input placeholder="Speciality name" class="all-inputs" id="title-input" type="text"  required/> <br>
+                <input placeholder="Physician in charge" class="all-inputs" id="special-input" type="text"  required /> <br>
+                
+                <button class="buttons" id="delete-speciality-button">Update Speciality</button>
+
+              </form>
+
+        </div>
+
+        <div class="forms">
+
+            <form id="patient-form " action="#">
+
+                <h2 class="forms-title">Delete patient</h2>
+
+                <input placeholder="PatientId" class="all-inputs" id="patient-input-patientId" type="text"  required/> <br>
+                <input placeholder="Name" class="all-inputs" id="patient-input-name" type="text"  required/> <br>
+                <input placeholder="Age" class="all-inputs" id="age-input" type="text"  required/> <br>
+                <input placeholder="Dni" class="all-inputs" id="dni-input" type="text" required /> <br>
+                <input placeholder="dd/mm/aaaa" class="all-inputs" id="appointment-input" type="text" required /> <br>
+                <input placeholder="Speciality ID" class="all-inputs" id="patient-speciality-id" type="text" required /> <br> 
+                
+                <button class="buttons" id="delete-patient-button">Update Patient</button>
+              </form>
+
+        </div>
+
+        
+        
+        
     </div>
 
     <script type="module" src="index.js"></script>
